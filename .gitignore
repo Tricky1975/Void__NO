@@ -267,3 +267,6 @@ __pycache__/
 # MKL
 MKL_*
 *.MKL.*
+
+# Test run stuff
+JBTest/
