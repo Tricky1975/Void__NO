@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Void")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright © 2019, Jeroen P. Broks, Licensed under the terms of the GPL3")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
