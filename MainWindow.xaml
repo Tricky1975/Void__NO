@@ -18,7 +18,7 @@
         <Label Content="Project Tree:" Foreground="Yellow" Margin="10,221,1588,713"></Label>
         <ListBox x:Name="ProjectTree" Margin="10,245,1588,22"></ListBox>
         <Label Content="Nothing at all" Margin="234,0,214,938" Foreground="Yellow" x:Name="CurrentFile"></Label>
-        <RichTextBox ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Name="TextInput" AcceptsReturn="True" TextChanged="TextChangedEventHandler" Margin="234,38,214,22" Foreground="#FFFFFEFE">
+        <RichTextBox ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Name="TextInput" AcceptsReturn="True" TextChanged="TextChangedEventHandler" Margin="234,38,214,22" Foreground="#FFFFFEFE" FontFamily="Courier New" FontSize="14">
             <RichTextBox.Resources>
                 <Style TargetType="{x:Type Paragraph}">
                     <Setter Property="Margin" Value="0"/>
