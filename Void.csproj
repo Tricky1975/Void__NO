@@ -77,6 +77,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="..\TrickyUnits\mkl.cs">
+      <Link>Units\mkl.cs</Link>
+    </Compile>
+    <Compile Include="..\TrickyUnits\qstr.cs">
+      <Link>Units\qstr.cs</Link>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>

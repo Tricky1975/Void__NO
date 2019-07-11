@@ -22,7 +22,8 @@ namespace Void.Highlights {
             HLDrivers["NIL"] = new NIL();
         }
 
-        abstract public void Highlight(RichTextBox RTB);
+        abstract public void Highlight(RichTextBox RTB,string TXT);
+        abstract public bool Recognize(string filename);
 
     }
 }

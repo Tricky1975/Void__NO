@@ -24,6 +24,7 @@
 // Version: 19.07.11
 // EndLic
 
+#define AlwaysNIL
 
 using System;
 using System.Collections.Generic;
@@ -49,13 +50,26 @@ namespace Void {
             InitializeComponent();
         }
 
+        bool HL_BLOCK = false;
         private void TextChangedEventHandler(object sender, TextChangedEventArgs e) {
             // Nothing here, then get the hell out of here!
             if (TextInput.Document == null) return;
-
+            if (HL_BLOCK) return;
+            HL_BLOCK = true;
             // Clear all previos settings! They can only spook things up!
             var documentRange = new TextRange(TextInput.Document.ContentStart, TextInput.Document.ContentEnd);
             documentRange.ClearAllProperties();
+            var TXT = documentRange.Text;
+
+            var recognizedas = "";
+#if AlwaysNIL
+            recognizedas = "NIL";
+#else
+#endif
+            if (recognizedas != "") {
+                Highlights.Algemeen.HLDrivers[recognizedas].Highlight(TextInput,TXT);
+            }
+            HL_BLOCK = false;
         }
     }
 }
