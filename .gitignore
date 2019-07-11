@@ -259,3 +259,11 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Mac's needless files should not be there if this is ever cloned on a Mac
+.DS_Store
+._*
+
+# MKL
+MKL_*
+*.MKL.*
