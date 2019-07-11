@@ -50,7 +50,12 @@ namespace Void {
         }
 
         private void TextChangedEventHandler(object sender, TextChangedEventArgs e) {
+            // Nothing here, then get the hell out of here!
+            if (TextInput.Document == null) return;
 
+            // Clear all previos settings! They can only spook things up!
+            var documentRange = new TextRange(TextInput.Document.ContentStart, TextInput.Document.ContentEnd);
+            documentRange.ClearAllProperties();
         }
     }
 }
