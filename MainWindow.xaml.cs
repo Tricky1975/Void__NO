@@ -47,6 +47,10 @@ namespace Void {
         public MainWindow() {
             InitializeComponent();
         }
+
+        private void TextChangedEventHandler(object sender, TextChangedEventArgs e) {
+
+        }
     }
 }
 

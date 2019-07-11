@@ -17,6 +17,21 @@
         <ListBox x:Name="Projects" Margin="10,33,1588,782"></ListBox>
         <Label Content="Project Tree:" Foreground="Yellow" Margin="10,221,1588,713"></Label>
         <ListBox x:Name="ProjectTree" Margin="10,245,1588,22"></ListBox>
-        <Label Content="Nothing at all" Margin="234,0,214,938" Foreground="Yellow"></Label>
+        <Label Content="Nothing at all" Margin="234,0,214,938" Foreground="Yellow" x:Name="CurrentFile"></Label>
+        <RichTextBox ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Name="TextInput" AcceptsReturn="True" TextChanged="TextChangedEventHandler" Margin="234,38,214,22" Foreground="#FFFFFEFE">
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </RichTextBox.Resources>
+            <RichTextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF000064" Offset="1"/>
+                </LinearGradientBrush>
+            </RichTextBox.Background>
+        </RichTextBox>
+        <Label Content="Outline" Foreground="Yellow" Margin="1598,0,10,938"></Label>
+        <ListBox x:Name="F_Outline" Margin="1598,38,10,22"></ListBox>
     </Grid>
 </Window>
