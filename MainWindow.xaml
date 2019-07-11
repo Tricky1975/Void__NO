@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Void"
         mc:Ignorable="d"
-        Title="Void - (c) Jeroen P. Broks" Height="450" Width="800" WindowState="Maximized">
+        Title="Void - (c) Jeroen P. Broks"  Width="1800" Height="1000" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF646496" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Projects:" Foreground="Yellow" Margin="10,0,1588,938" ></Label>
+        <ListBox x:Name="Projects" Margin="10,33,1588,782"></ListBox>
+        <Label Content="Project Tree:" Foreground="Yellow" Margin="10,221,1588,713"></Label>
+        <ListBox x:Name="ProjectTree" Margin="10,245,1588,22"></ListBox>
+        <Label Content="Nothing at all" Margin="234,0,214,938" Foreground="Yellow"></Label>
     </Grid>
 </Window>
