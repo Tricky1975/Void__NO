@@ -3,3 +3,7 @@
 Void is a personal project, but it has been released here on github for whoever sees benefit in it!
 
 Please note, it's a W.I.P. so not fully functional yet!
+
+
+Due to bugs inside WPF, this project is discontinued...
+Due to bugs in GitHub I could not archive it!
